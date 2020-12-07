@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+
+    background: white no-repeat center/cover;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    height: 100%;
+    width: 30%;
+    padding: 5em 3em;
+    min-width: 460px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    box-shadow: 8px 8px 32px 0 #eee;
+}
+
+.form>.header,
+.form>.input,
+.form>.action {
+    margin: 1em;
+}
+
+.form>.header, .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form>.header>span {
+    margin-top: 1em;
+    font-size: larger
+}
+
+.form>.input {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.form>.input>input {
+    height: 2em;
+    padding: 4px 8px;
+
+    font-size: larger;
+
+    appearance: none;
+
+    background-color: white;
+
+    border: 3px solid gray;
+    border-radius: 4px;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.form>.input>input:focus {
+    border: 3px solid rgb(17, 147, 253);
+}
+
+.form>.input>input:valid {
+    border: 3px solid rgb(37, 253, 17);
+}
+
+.form>.input>input:not(:empty):invalid {
+    border: 3px solid rgb(255, 100, 100);
+}
+
+.form>.action {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+
+    width: 100%;
+}
+
+.form>.action>button {
+    height: 2em;
+    padding: 4px 16px;
+
+    font-size: larger;
+
+    color: green;
+    background-color: lightgreen;
+
+    border: 0;
+    border-radius: 4px;
+
+    box-shadow: 2px 2px 8px 0 lightgreen;
+
+    text-transform: capitalize;
+
+    transition: 1s box-shadow ease-in-out;
+}
+
+.form>.action>button:hover {
+    box-shadow: 0 0 32px 0 lightgreen;
+}
+
+.form>.action>a {
+    font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        height: 100vh;
+        width: 100%;
+    }
+}

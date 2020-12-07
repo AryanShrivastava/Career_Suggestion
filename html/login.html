@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" action="/api/login" method="post">
+        <div class="header">
+            <img src="https://dummyimage.com/100/12e38c/000000.png" />
+            <span>Login to continue</span>
+        </div>
+        <div class="input">
+            <input type="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="input">
+            <input type="password" minlength="8" placeholder="Password" name="password" required>
+        </div>
+        <div class="action">
+            <button type="submit">Login</button>
+        </div>
+        <div class="action center">
+            <a href="signup.html">Don't have an account?</a>
+            <span>•</span>
+            <a href="#">Forgot password?</a>
+        </div>
+    </form>
+
+</body>
+
+</html>

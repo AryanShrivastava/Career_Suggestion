@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" action="/api/login" method="post">
+        <div class="header">
+            <img src="https://dummyimage.com/100/12e38c/000000.png" />
+            <span>Create your account</span>
+        </div>
+        <div class="input">
+            <input type="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="input">
+            <input type="password" minlength="8" placeholder="Password" name="password" required>
+        </div>
+        <div class="action">
+            <button type="submit">Register</button>
+        </div>
+        <div class="action center">
+            <a href="login.html">Already have an account?</a>
+        </div>
+    </form>
+
+</body>
+
+</html>
