@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .questionaire {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+
+            padding: 16px;
+        }
+
+        .question {
+            font-size: xx-large;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .choices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .choices {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .choice {
+            height: 25vmin;
+
+            font-size: x-large;
+
+            color: steelblue;
+            background-color: lightskyblue;
+
+            border: 0;
+            border-radius: 8px;
+
+            box-shadow: 2px 2px 8px 0 lightskyblue;
+
+            transition: .3s all ease-in-out;
+        }
+
+        .choice:hover,
+        .choice:focus {
+            color: white;
+            background-color: lightcoral;
+            box-shadow: 0 0 32px 0 lightcoral;
+        }
+
+        .submit {
+            align-self: flex-end;
+
+            padding: 8px 24px;
+
+            font-size: larger;
+
+            color: forestgreen;
+            background-color: lightgreen;
+
+            border: 0;
+            border-radius: 8px;
+
+            box-shadow: 2px 2px 8px 0 lightgreen;
+
+            transition: .3s all ease-in-out;
+        }
+
+        .submit:hover,
+        .submit:focus {
+            box-shadow: 0 0 32px 0 lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script> -->
+    <!-- <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script> -->
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script src="quiz.js" type="text/babel"></script>
+</body>
+
+</html>
