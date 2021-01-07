@@ -1,11 +1,9 @@
 let currentQuestion = {
     id: 0,
-    question: "What is your current educational qualification?",
+    question: "Are you an iMPostEr?",
     choices: [
-        "10th",
-        "12th",
-        "UG",
-        "PG",
+        "Yes",
+        "No"
     ]
 }
 
